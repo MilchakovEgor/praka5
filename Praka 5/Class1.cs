@@ -1,8 +1,8 @@
-﻿namespace CAKE
+﻿namespace Tortiki
 {
-    internal class Cake
+    internal class Tortiky
     {
-        bool isListenning = true;
+        bool Bool = true;
         int posicion = 3;
         int lockPosicion = 9;
         int window = 0;
@@ -65,7 +65,7 @@
 
             else if (window == 1 & posicion == 3 & key.Key == ConsoleKey.Enter)
             {
-                cake.form = "круг";
+                cake.form = "круглый";
                 cake.coastForm = 500;
                 posicion = 3;
                 lockPosicion = 9;
@@ -73,7 +73,7 @@
             }
             else if (window == 1 & posicion == 4 & key.Key == ConsoleKey.Enter)
             {
-                cake.form = "квадрат";
+                cake.form = "квадратный";
                 cake.coastForm = 500;
                 posicion = 3;
                 lockPosicion = 9;
@@ -81,7 +81,7 @@
             }
             else if (window == 1 & posicion == 5 & key.Key == ConsoleKey.Enter)
             {
-                cake.form = "прямоугольник";
+                cake.form = "овальный";
                 cake.coastForm = 500;
                 posicion = 3;
                 lockPosicion = 9;
@@ -89,7 +89,7 @@
             }
             else if (window == 1 & posicion == 6 & key.Key == ConsoleKey.Enter)
             {
-                cake.form = "сердечкo";
+                cake.form = "ромб";
                 cake.coastForm = 700;
                 posicion = 3;
                 lockPosicion = 9;
@@ -121,7 +121,7 @@
             }
             else if (window == 3 & posicion == 3 & key.Key == ConsoleKey.Enter)
             {
-                cake.vkus = "ванильный";
+                cake.vkus = "клубничный";
                 cake.coastVkus = 100;
                 posicion = 5;
                 lockPosicion = 9;
@@ -137,7 +137,7 @@
             }
             else if (window == 3 & posicion == 5 & key.Key == ConsoleKey.Enter)
             {
-                cake.vkus = "крамельный";
+                cake.vkus = "ореховый";
                 cake.coastVkus = 200;
                 posicion = 5;
                 lockPosicion = 9;
@@ -153,7 +153,7 @@
             }
             else if (window == 3 & posicion == 7 & key.Key == ConsoleKey.Enter)
             {
-                cake.vkus = "кокосовый";
+                cake.vkus = "с йогуртом";
                 cake.coastVkus = 300;
                 posicion = 5;
                 lockPosicion = 9;
@@ -169,7 +169,7 @@
             }
             else if (window == 4 & posicion == 4 & key.Key == ConsoleKey.Enter)
             {
-                cake.kolvo = "2 корж";
+                cake.kolvo = "2 коржа";
                 cake.coastKolvo = 200;
                 posicion = 6;
                 lockPosicion = 9;
@@ -177,7 +177,7 @@
             }
             else if (window == 4 & posicion == 5 & key.Key == ConsoleKey.Enter)
             {
-                cake.kolvo = "3 корж";
+                cake.kolvo = "3 коржа";
                 cake.coastKolvo = 300;
                 posicion = 6;
                 lockPosicion = 9;
@@ -185,7 +185,7 @@
             }
             else if (window == 4 & posicion == 6 & key.Key == ConsoleKey.Enter)
             {
-                cake.kolvo = "4 корж";
+                cake.kolvo = "4 коржа";
                 cake.coastKolvo = 400;
                 posicion = 6;
                 lockPosicion = 9;
@@ -193,7 +193,7 @@
             }
             else if (window == 5 & posicion == 3 & key.Key == ConsoleKey.Enter)
             {
-                cake.glaz = "шоколад";
+                cake.glaz = "пудра";
                 cake.coastGlaz = 100;
                 posicion = 7;
                 lockPosicion = 9;
@@ -217,7 +217,7 @@
             }
             else if (window == 5 & posicion == 6 & key.Key == ConsoleKey.Enter)
             {
-                cake.glaz = "драже";
+                cake.glaz = "врвхис";
                 cake.coastGlaz = 200;
                 posicion = 7;
                 lockPosicion = 9;
@@ -353,7 +353,7 @@
                 ConsoleKeyInfo key1 = Console.ReadKey();
                 if (window == 7 & key1.Key == ConsoleKey.Enter)
                 {
-                    isListenning = false;
+                    Bool = false;
                 }
             }
         }
@@ -363,7 +363,7 @@
             Menu(cake);
             Console.SetCursorPosition(0, posicion);
             Console.WriteLine("->");
-            while (isListenning == true)
+            while (Bool == true)
             {
                 cursor(cake);
                 Console.Clear();
